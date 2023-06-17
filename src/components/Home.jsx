@@ -1,10 +1,10 @@
 import React from 'react'
-
+import bgImage from '../images/bg.png';
 const Home = () => {
   return (
     <div className='main-div'>
 
-      <img src={require('E:/eco_hub/src/images/bg.png')}
+      <img src={bgImage}
         style={{
 
           width: '70%',
