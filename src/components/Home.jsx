@@ -1,10 +1,10 @@
 import React from 'react'
-
+import bgImage from '../images/bg.png';
 const Home = () => {
   return (
-    <div className='main-div'>
+    <div className='container'>
 
-      <img src={require('E:/eco_hub/src/images/bg.png')}
+      <img src={bgImage}
         style={{
 
           width: '70%',
@@ -28,7 +28,7 @@ const Home = () => {
 
       }}>
         <h1 style={{color:'#4E9F3D',fontWeight:'700',fontSize:'4vw'}}>The Right Place</h1>
-        <h1 style={{fontWeight:'800',fontSize:'4.5vw'}}>To Dump Your E-Waste</h1>
+        <h1 style={{fontWeight:'800',fontSize:'4.5vw',marginTop:'7rem'}}>To Dump Your E-Waste</h1>
       </div>
 
 

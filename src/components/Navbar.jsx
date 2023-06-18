@@ -2,7 +2,7 @@ import { Button } from '@mui/material'
 import React from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-
+import logo from '../images/logo.PNG';
 const Navbar = ({ type }) => {
     const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ const Navbar = ({ type }) => {
                 style={{ display: 'flex', justifyContent: 'space-between', backgroundColor: '', alignItems: 'center', marginTop: '10px' }}>
                 
                 <Link to='/'>
-                    <img src={require('E:/eco_hub/src/images/logo.PNG')} alt='no img' />
+                    <img src={logo} alt='no img' />
                 </Link>
                 <div className='menu' flex={1} style={{
                     display: 'flex', alignItems: 'center', fontFamily: 'Inter',
