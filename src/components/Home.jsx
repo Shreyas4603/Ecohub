@@ -32,10 +32,6 @@ const Home = () => {
         justifyContent:'center',
         fontFamily:'Inter',
         marginTop:'15%',
-      
-
-
-
       }}>
         <h1 style={{color:'#4E9F3D',fontWeight:'700',fontSize:'4vw'}}>The Right Place</h1>
         
