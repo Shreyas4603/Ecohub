@@ -27,7 +27,7 @@ const Home = () => {
       <div style={{
         display:'flex',
         flexDirection:'column',
-        
+        lineHeight:0,
         alignItems:'center',
         justifyContent:'center',
         fontFamily:'Inter',
