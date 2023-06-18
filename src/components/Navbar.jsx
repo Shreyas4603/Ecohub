@@ -2,7 +2,7 @@ import { Button } from '@mui/material'
 import React from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-import logo from '../images/logo.PNG';
+
 const Navbar = ({ type }) => {
     const navigate = useNavigate();
 
@@ -24,15 +24,19 @@ const Navbar = ({ type }) => {
                 style={{ display: 'flex', justifyContent: 'space-between', backgroundColor: '', alignItems: 'center', marginTop: '10px' }}>
                 
                 <Link to='/'>
-                    <img src={logo} alt='no img' />
+                    <img src={require('E:/eco_hub/src/images/logo.PNG')} alt='no img' />
                 </Link>
+
                 <div className='menu' flex={1} style={{
                     display: 'flex', alignItems: 'center', fontFamily: 'Inter',
                     fontWeight: '800',
                     fontSize: '25px',
                      backgroundColor: '', justifyContent: 'space-between',
                     alignContent: 'center',
-                    width:`${size}`
+                    width:`${size}`,
+
+                    
+
 
 
 
@@ -49,13 +53,13 @@ const Navbar = ({ type }) => {
                         paddingRight:'15px',
                         paddingTop:'0',
                         paddingBottom:'0',
-                        filter:'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5))',
+                        filter:'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9))',
                         
                         
-                    }} onClick={() => navigate('/signup')}>
-                        Signup</Button>}
+                    }} onClick={() => navigate('/signin')}>
+                        Signin</Button>}
                 </div>
-
+      
             </div>
         );
                 }        
